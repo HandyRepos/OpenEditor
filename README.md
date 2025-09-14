@@ -1,93 +1,95 @@
-✨ OpenEditor
+# ✨ OpenEditor  
 
-Turn any website into a live, editable canvas.
-With OpenEditor, the web becomes your playground — type directly on pages, replace images, and export your edits as HTML.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Status](https://img.shields.io/badge/status-active-success.svg)
 
-🚀 Features
+> Turn any website into a live, editable canvas.  
+With **OpenEditor**, the web becomes your playground — type directly on pages, replace images, and export your edits as HTML.  
 
-📝 Edit Mode — Instantly toggle contentEditable and type anywhere.
+---
 
-🖼️ Replace Images — Click an image and swap it with your own.
+## 🚀 Features  
 
-↩️ Reset Changes — Restore images to their originals in one click.
+- 📝 **Edit Mode** — Toggle `contentEditable` to type anywhere.  
+- 🖼️ **Replace Images** — Click an image and swap it with your own.  
+- ↩️ **Reset Changes** — Restore images to their originals in one click.  
+- 💾 **Export HTML** — Save your edited page as a standalone file.  
+- 🔒 **Local Only** — All edits happen in your browser. Nothing is uploaded.  
+- 🎨 **Simple & Fun** — Perfect for demos, mockups, pranks, or experiments.  
 
-💾 Export HTML — Save your edited page as a standalone file.
+---
 
-🔒 Local Only — All edits happen in your browser. Nothing is uploaded.
+## 📥 Installation  
 
-🎨 Simple & Fun — Great for demos, mockups, pranks, or just experimenting.
+### Developer Mode (manual install)  
 
-📥 Installation
-Developer Mode (manual install)
-
-Download or clone this repo:
-
+```bash
+# Clone this repo
 git clone https://github.com/yourusername/OpenEditor.git
 
-
-Open Chrome and go to chrome://extensions/.
-
-Enable Developer Mode (top right).
-
-Click Load unpacked and select the project folder.
-
-The extension icon will appear in your toolbar.
+# Open Chrome
+# Go to chrome://extensions/
+# Enable "Developer Mode" (top-right)
+# Click "Load unpacked" and select the project folder
+Once loaded, the extension icon will appear in your toolbar.
 
 🎯 Usage
-
 Open any website.
 
 Click the OpenEditor icon in your extensions bar.
 
-A floating toolbar appears (top-left corner).
+A floating toolbar will appear in the top-left corner.
 
-Use the buttons to:
+Use the toolbar buttons:
 
-✏️ Toggle Edit Mode
+text
+Copy code
+✏️  Edit        → Toggle editing mode
+🖼️  Replace     → Replace the currently selected image
+↩️  Reset       → Restore replaced images
+💾  Export      → Save your edited page as HTML
+Example:
 
-🖼️ Replace selected images
+js
+Copy code
+// In Edit Mode, the page behaves like a text editor
+document.body.contentEditable = true;
 
-↩️ Reset replaced images
-
-💾 Export your current edits as an HTML file
-
+// Replace an image by clicking it and choosing a new file
+<img src="original.png" />
+// → becomes
+<img src="data:image/png;base64,...yourimage..." />
 📸 Screenshots
+(Add screenshots or a demo GIF here for best effect!)
 
-(Add your screenshots here — maybe a GIF showing editing in action!)
+🔧 Development
+Want to hack on OpenEditor?
 
-🔧 How It Works
+bash
+Copy code
+# Fork this repo
+git clone https://github.com/yourusername/OpenEditor.git
+cd OpenEditor
 
-OpenEditor uses Chrome’s content scripts to inject a floating toolbar into any webpage.
-
-Edit mode uses the browser’s built-in document.body.contentEditable.
-
-Image replacement swaps src attributes with data URLs.
-
-Export clones the DOM, inlines images when possible, and saves it as HTML.
-
-All of this happens client-side — nothing leaves your browser.
-
-🛠️ Development
-
-Want to contribute? Awesome 🎉
-
-Fork this repo and submit PRs.
-
-File issues for bugs or feature requests.
-
-Ideas welcome — let’s make this the ultimate "edit the web" tool.
+# Make changes to content.js / service_worker.js
+# Reload the extension in chrome://extensions/
+Pull requests are welcome 🚀
 
 📜 License
-
 This project is licensed under the MIT License.
-See the LICENSE
- file for details.
+See the LICENSE file for details.
 
 👋 About
+Built by Jack — a developer who enjoys making tools that are:
 
-Built by Jack — a developer who likes making tools that are useful, fun, and a little playful.
+⚡ Fast and simple
 
-If you enjoy OpenEditor:
+🛠️ Useful for creators and developers
+
+🎨 Playful and fun
+
+If you like OpenEditor:
 
 ⭐ Star this repo
 
