@@ -25,7 +25,7 @@
 ### Option 1 — Developer Mode (manual install)
 
 ~~~bash
-git clone https://github.com/yourusername/OpenEditor.git
+git clone https://github.com/HandyRepos/OpenEditor.git
 ~~~
 
 1. Open Chrome and navigate to:
@@ -87,7 +87,7 @@ OpenEditor/
 
 ~~~bash
 # Fork this repo
-git clone https://github.com/yourusername/OpenEditor.git
+git clone https://github.com/HandyRepos/OpenEditor.git
 cd OpenEditor
 
 # Make changes to content.js / service_worker.js
@@ -100,7 +100,7 @@ cd OpenEditor
 {
   "name": "OpenEditor",
   "description": "Toggle contentEditable, swap images, and export your edited page.",
-  "version": "1.0.1",
+  "version": "1.0",
   "manifest_version": 3,
   "permissions": ["activeTab", "scripting", "downloads", "storage"],
   "host_permissions": ["<all_urls>"],
