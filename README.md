@@ -1,7 +1,7 @@
 # ✨ OpenEditor
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-![Version](https://img.shields.io/badge/version-1.0.1-blue)
+![Version](https://img.shields.io/badge/version-1.0-blue)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 
 > A Chrome extension that turns any website into an editable canvas.  
