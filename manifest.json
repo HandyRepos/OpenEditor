@@ -1,0 +1,27 @@
+{
+  "name": "OpenEditor",
+  "description": "Toggle contentEditable, swap images, and export your edited page.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting", "downloads", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "service_worker.js" },
+  "action": {
+    "default_title": "OpenEditor",
+    "default_icon": { "128": "icons/icon128.png" }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["toolbar.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["toolbar.html", "icons/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
